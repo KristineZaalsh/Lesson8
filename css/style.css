@@ -1,0 +1,110 @@
+.box { 
+    background-image: url(../images/castle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px; height: 800px; margin: 0 auto; 
+    margin-top: 600px; 
+    border-style: solid;
+    position: relative;
+   
+   
+}
+
+.parachute {
+    width: 60px; height: 60px;
+    position: absolute;
+    left: 600px;
+    top: 55px; 
+    animation-name: parachute;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+
+}
+.heli { 
+    width: 150px; height: 150px; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: heli;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.tank {
+    width: 100px; height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 600px; 
+}
+.bullet {
+    width: 50px; height: 50px;
+    position: absolute;
+    top: 600px;
+    left: 25px;
+    animation-name: bullet;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.clouds { 
+    width: 150px;
+    position: absolute;
+    left: 900px;
+    bottom: 800px;
+    animation-name: cloud;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+   
+}
+
+
+
+@keyframes heli {
+    from {left: 0px;
+    }
+    to {
+        left:515px;
+    }
+    
+}
+@keyframes parachute {
+    from {
+        top: 55px;
+    }
+    to {
+        top: 250px
+    }
+
+}
+@keyframes bullet {
+    from {
+        bottom: 0px;
+
+    }
+    to{
+        top: 100px;
+    }
+}
+
+@keyframes cloud {
+    from {
+        right: 0px;
+    }
+    to { left: 20px;
+        
+    }
+}
